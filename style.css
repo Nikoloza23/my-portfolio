@@ -182,6 +182,11 @@ img {
   font-weight: 600;
 }
 
+.text_project3{
+  position: relative;
+  top: 485px;
+}
+
 .work .content {
   border: 1px solid #fff;
   display: grid;
@@ -370,6 +375,9 @@ img {
   header.sticky {
     padding: 20px 50px;
     z-index: 1000;
+  }
+  h2.text_project{
+    margin-top: 50px;
   }
   .menu {
     position: fixed;
