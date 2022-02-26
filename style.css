@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 * {
   margin: 0;
@@ -7,6 +7,7 @@
   font-family: "Popins", sans-serif;
   scroll-behavior: smooth;
 }
+
 
 section {
   padding: 100px;
@@ -23,6 +24,8 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 .banner h2 {
   font-size: 3em;
@@ -41,6 +44,109 @@ section {
   color: #fff;
   font-weight: 500;
 }
+
+
+.container_{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.container_ a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #0f0;
+  margin: 40px ;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 2px;
+  -webkit-box-reflect: below 0px linear-gradient(transparent,#0002);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.container_ a:hover{
+  transition-delay: 1.5s;
+  color: #000;
+  box-shadow: 0 0 10px #0f0,
+  0 0 20px #0f0
+  0 0 40px #0f0
+  0 0 80px #0f0
+  0 0 160px #0f0
+
+}
+
+
+
+.container_ a:nth-child(1){
+  filter: hue-rotate(80deg);
+}
+
+.container_ a span{
+  position: relative;
+  z-index: 100;
+}
+
+.container_  a::before{
+  content: ''; 
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #0f0;
+  box-shadow: 5px -8px 0 #0f0,
+              5px 8px 0 #0f0;
+  transition: width 0.5s, left 0.5s, height 0.5s,
+  box-shadow 0.5s;
+  transition-delay: 1s,0.5s,0s,0s;
+}
+
+
+.container_ a:hover::before{
+  width: 60%;
+  height: 100%;
+  left: -2px;
+  box-shadow: 5px 0 0 #0f0,
+              5px 0 0 #0f0;
+  transition-delay: 0s,0.5s,1s,1s,;            
+}
+
+
+.container_  a::after{
+  content: ''; 
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #0f0;
+  box-shadow: -5px -8px 0 #0f0,
+              -5px 8px 0 #0f0;
+  transition: width 0.5s, left 0.5s, height 0.5s,
+  box-shadow 0.5s;
+  transition-delay: 1s,0.5s,0s,0s;
+}
+
+
+.container_ a:hover::after{
+  width: 60%;
+  height: 100%;
+  right: -2px;
+  box-shadow: -5px 0 0 #0f0,
+              -5px 0 0 #0f0;
+  transition-delay: 0s,0.5s,1s,1s,;            
+}
+
+
+
+
 
 .btn {
   position: relative;
@@ -377,7 +483,11 @@ img {
     z-index: 1000;
   }
   h2.text_project{
-    margin-top: 50px;
+    margin-top: 100px;
+  }
+  h2.text_project3{
+    margin-top: 1px;
+    margin-bottom: 10px;
   }
   .menu {
     position: fixed;
