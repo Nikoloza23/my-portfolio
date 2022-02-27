@@ -8,7 +8,6 @@
   scroll-behavior: smooth;
 }
 
-
 section {
   padding: 100px;
 }
@@ -24,8 +23,6 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 .banner h2 {
   font-size: 3em;
@@ -45,54 +42,46 @@ section {
   font-weight: 500;
 }
 
-
-.container_{
+.container_ {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-
-.container_ a{
+.container_ a {
   position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #0f0;
-  margin: 40px ;
+  margin: 40px;
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 2px;
-  -webkit-box-reflect: below 0px linear-gradient(transparent,#0002);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
   transition: 0.5s;
   transition-delay: 0s;
 }
 
-.container_ a:hover{
+.container_ a:hover {
   transition-delay: 1.5s;
   color: #000;
   box-shadow: 0 0 10px #0f0,
-  0 0 20px #0f0
-  0 0 40px #0f0
-  0 0 80px #0f0
-  0 0 160px #0f0
-
+    0 0 20px #0f0 0 0 40px #0f0 0 0 80px #0f0 0 0 160px #0f0;
 }
 
-
-
-.container_ a:nth-child(1){
+.container_ a:nth-child(1) {
   filter: hue-rotate(80deg);
 }
 
-.container_ a span{
+.container_ a span {
   position: relative;
   z-index: 100;
 }
 
-.container_  a::before{
-  content: ''; 
+.container_ a::before {
+  content: "";
   position: absolute;
   left: -20px;
   top: 50%;
@@ -100,26 +89,21 @@ section {
   width: 20px;
   height: 2px;
   background: #0f0;
-  box-shadow: 5px -8px 0 #0f0,
-              5px 8px 0 #0f0;
-  transition: width 0.5s, left 0.5s, height 0.5s,
-  box-shadow 0.5s;
-  transition-delay: 1s,0.5s,0s,0s;
+  box-shadow: 5px -8px 0 #0f0, 5px 8px 0 #0f0;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
-
-.container_ a:hover::before{
+.container_ a:hover::before {
   width: 60%;
   height: 100%;
   left: -2px;
-  box-shadow: 5px 0 0 #0f0,
-              5px 0 0 #0f0;
-  transition-delay: 0s,0.5s,1s,1s,;            
+  box-shadow: 5px 0 0 #0f0, 5px 0 0 #0f0;
+  transition-delay: 0s, 0.5s, 1s, 1s;
 }
 
-
-.container_  a::after{
-  content: ''; 
+.container_ a::after {
+  content: "";
   position: absolute;
   right: -20px;
   top: 50%;
@@ -127,26 +111,18 @@ section {
   width: 20px;
   height: 2px;
   background: #0f0;
-  box-shadow: -5px -8px 0 #0f0,
-              -5px 8px 0 #0f0;
-  transition: width 0.5s, left 0.5s, height 0.5s,
-  box-shadow 0.5s;
-  transition-delay: 1s,0.5s,0s,0s;
+  box-shadow: -5px -8px 0 #0f0, -5px 8px 0 #0f0;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
-
-.container_ a:hover::after{
+.container_ a:hover::after {
   width: 60%;
   height: 100%;
   right: -2px;
-  box-shadow: -5px 0 0 #0f0,
-              -5px 0 0 #0f0;
-  transition-delay: 0s,0.5s,1s,1s,;            
+  box-shadow: -5px 0 0 #0f0, -5px 0 0 #0f0;
+  transition-delay: 0s, 0.5s, 1s, 1s;
 }
-
-
-
-
 
 .btn {
   position: relative;
@@ -288,11 +264,6 @@ img {
   font-weight: 600;
 }
 
-.text_project3{
-  position: relative;
-  top: 485px;
-}
-
 .work .content {
   border: 1px solid #fff;
   display: grid;
@@ -313,7 +284,7 @@ img {
   text-decoration: none;
 }
 
-.name{
+.name {
   text-decoration: none;
 }
 
@@ -508,7 +479,7 @@ span.download_:last-child {
   margin-left: -20px;
 }
 
-span.pdf{
+span.pdf {
   background: #f2594b;
   border-radius: 4px;
   color: #ffffff;
@@ -528,25 +499,25 @@ span.pdf:last-child {
 
 a.download:before,
 a.download:after {
-    background: #ffffff;
-    border: solid 3px #9fb4cc;
-    border-radius: 4px;
-    content: '';
-    display: block;
-    height: 35px;
-    left: 50%;
-    margin: -17px 0 0 -12px;
-    position: absolute;
-    top: 50%;    
-    width: 25px;
+  background: #ffffff;
+  border: solid 3px #9fb4cc;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 35px;
+  left: 50%;
+  margin: -17px 0 0 -12px;
+  position: absolute;
+  top: 50%;
+  width: 25px;
 }
 
 a.download:hover:before,
 a.download:hover:after {
-    background: #e2e8f0;
+  background: #e2e8f0;
 }
 
-h3.resume{
+h3.resume {
   color: #2196f3;
 }
 
@@ -560,7 +531,7 @@ a.download:hover {
 
 a.download:active {
   background: #dae0e8;
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .25);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 a.download span:first-child {
@@ -575,8 +546,6 @@ a.download:hover span:last-child {
   display: none;
 }
 
-
-
 /*Responsive*/
 @media (max-width: 991px) {
   header,
@@ -584,16 +553,22 @@ a.download:hover span:last-child {
     padding: 20px 50px;
     z-index: 1000;
   }
-  h2.text_project{
-    margin-top: 100px;
-    font-size: 15px;
+  h2.text_project {
+    position: relative;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .workBx > img {
+    position: relative;
+    width: 500px;
+    height: 350px;
   }
   a.download {
     position: relative;
     left: -150px;
     top: 20px;
   }
-  h2.text_project3{
+  h2.text_project3 {
     margin-top: 1px;
     margin-bottom: 10px;
     font-size: 13px;
@@ -645,12 +620,6 @@ a.download:hover span:last-child {
   }
   .banner h3 {
     font-size: 1.5em;
-  }
-}
-
-@media (max-width: 500px){
-  h2.text_project{
-    font-size: 15px;
   }
 }
 
