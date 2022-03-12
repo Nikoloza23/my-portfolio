@@ -546,6 +546,11 @@ a.download:hover span:last-child {
   display: none;
 }
 
+h2.text_project{
+  font-size: 14px;
+}
+
+
 /*Responsive*/
 @media (max-width: 991px) {
   header,
